@@ -1,3 +1,11 @@
+<?php
+if (isset($_POST['submit'])){
+    #success
+}else{
+    echo "your name is unavalibale  we coldn't find your userName";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +47,7 @@
         font-size: 20px;
         color: #ffff;
         border: 1px solid black;
-        width: 248px;
+        width: 250px;
         outline: none;
         background:crimson;
     }
@@ -51,7 +59,10 @@
 </style>
 <body>
    <h1 class="hero">
-    this user's name is ⚒️⛏️🔧
+   <?php
+    echo "this user's name is ". $_POST['name']." ⚒️⛏️🔧"
+    ?>
+    
    </h1>
    <div class="container">
     <div class="holder">
