@@ -60,7 +60,7 @@ if (isset($_POST['submit'])){
 <body>
    <h1 class="hero">
    <?php
-    echo "this user's name is ". $_POST['name']." ⚒️⛏️🔧"
+    echo "The user's name is " . $_POST['name'] . " ⚒️⛏️🔧"
     ?>
     
    </h1>
